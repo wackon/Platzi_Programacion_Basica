@@ -61,13 +61,12 @@ dibujarLineas(colorsito, 20, 0, 300, 30); */
 
   dibujarLineas(colorsito, 1, 1, 1, 300);
   dibujarLineas(colorsito, 1, ancho - 1, ancho - 1, ancho - 1);
-
-  function dibujarLineas(color, xinicial, yinicial, xfinal, yfinal) {
-    lienzo.beginPath();
-    lienzo.strokeStyle = color;
-    lienzo.moveTo(xinicial, yinicial);
-    lienzo.lineTo(xfinal, yfinal);
-    lienzo.stroke();
-    lienzo.closePath();
-  }
+}
+function dibujarLineas(color, xinicial, yinicial, xfinal, yfinal) {
+  lienzo.beginPath();
+  lienzo.strokeStyle = color;
+  lienzo.moveTo(xinicial, yinicial);
+  lienzo.lineTo(xfinal, yfinal);
+  lienzo.stroke();
+  lienzo.closePath();
 }
