@@ -21,7 +21,7 @@ function dibujoPorClick() {
   dibujarLineas(colorsito, 0, yi, xf, 300);
   console.log("Linea" + l);
   l++;
-} */
+  } */
 
   while (l < lineas) {
     xf = espacio * (l + 1);
@@ -56,12 +56,17 @@ function dibujoPorClick() {
     i++;
   }
   /* dibujarLineas(colorsito, 0, 0, 300, 10);
-dibujarLineas(colorsito, 10, 0, 300, 20);
-dibujarLineas(colorsito, 20, 0, 300, 30); */
+  dibujarLineas(colorsito, 10, 0, 300, 20);
+  dibujarLineas(colorsito, 20, 0, 300, 30); */
 
-  dibujarLineas(colorsito, 1, 1, 1, 300);
-  dibujarLineas(colorsito, 1, ancho - 1, ancho - 1, ancho - 1);
+  dibujarLineas(colorsito, 1, 0, 1, 300);
+  dibujarLineas(colorsito2, 1, 299, 299, 299);
+  dibujarLineas(colorsito, 299, 1, 299, 299);
+  dibujarLineas(colorsito2, 0, 1, 299, 1);
+  /* 
+  dibujarLineas(colorsito, 1, ancho - 1, ancho - 1, ancho - 1); */
 }
+
 function dibujarLineas(color, xinicial, yinicial, xfinal, yfinal) {
   lienzo.beginPath();
   lienzo.strokeStyle = color;
